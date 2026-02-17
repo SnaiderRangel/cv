@@ -1,104 +1,68 @@
+# CV - Snaider Armando Rangel Rondon
 
+Minimalist portfolio and CV built with [Astro](https://astro.build/), powered by a JSON file for fast and easy customization.
 
-<div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
-<h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
-</h2>
-<p>
-Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
-</p>
+## Technologies
 
+- **Astro** — Static web framework for optimal performance
+- **TypeScript** — Static typing for robustness
+- **Plus Jakarta Sans** — Main typography
 
-<p>
-Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
+## Project Structure
 
-</p>
-
-</div>
-
-<div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
-</div>
-
-<p></p>
-
-<div align="center">
-
-![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
-
-</div>
-
-<img src="portada.png"></img>
-
-## 🛠️ Stack
-
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
-
-
-## 🚀 Empezar
-
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
-
-
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
-
-```bash
-# Activa pnpm en MacOS, WSL & Linux:
-corepack enable
-corepack prepare pnpm@latest --activate
-
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
+```
+├── cv.json              # CV data in Spanish
+├── cv_english.json      # CV data in English
+├── public/              # Static files (photo, favicon)
+└── src/
+    ├── components/      # Reusable components
+    │   └── sections/    # CV sections (Hero, About, Experience, etc.)
+    ├── icons/           # SVG icons as Astro components
+    ├── layouts/         # Main layout
+    └── pages/           # Site pages
 ```
 
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-### 3. Lanza el servidor de desarrollo:
+## How to use
+
+### 1. Install dependencies
 
 ```bash
-# Disfruta del resultado
-pnpm dev
+bun install
 ```
 
+### 2. Start the development server
 
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
+```bash
+bun run dev
+```
 
+### 3. Customize
 
-## 🧞 Comandos
+Edit the `cv.json` file with your personal information. Available fields:
 
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+- **basics** — Name, title, image, email, phone, summary, location, social profiles
+- **work** — Work experience
+- **education** — Academic background
+- **skills** — Technical skills
+- **projects** — Featured projects
+- **languages** — Languages
 
+> If a section has an empty array, it will not be rendered on the page.
 
+### 4. Build for production
 
-## 🔑 Licencia
+```bash
+bun run build
+```
 
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
+### 5. Print as PDF
 
+Use `Ctrl + P` in your browser to print or save as PDF. Margins are optimized to remove browser headers/footers.
 
+## Keyboard Shortcuts
 
+The portfolio includes a keyboard shortcut manager for quick navigation.
+
+## License
+
+[MIT](LICENSE.txt)
