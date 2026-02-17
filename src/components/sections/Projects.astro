@@ -1,10 +1,13 @@
 ---
 import GitHub from "@/icons/GitHub.astro"
 import Section from "../Section.astro"
+import type { CV } from "@/cv"
 
-import { projects } from "@cv"
+import cv from "@cv"
+const projects = (cv as unknown as CV).projects ?? []
 ---
 
+{projects && projects.length > 0 && (
 <Section title="Proyectos">
   <ul>
     {
@@ -45,6 +48,7 @@ import { projects } from "@cv"
     }
   </ul>
 </Section>
+)}
 
 <style>
   ul {

@@ -4,6 +4,7 @@ import Section from "../Section.astro"
 import { work } from "@cv"
 ---
 
+{work && work.length > 0 && (
 <Section title="Experiencia laboral">
   <ul>
     {
@@ -52,6 +53,7 @@ import { work } from "@cv"
     }
   </ul>
 </Section>
+)}
 
 <style>
   ul {

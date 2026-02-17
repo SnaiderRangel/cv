@@ -19,6 +19,9 @@ const { image, summary, url } = basics
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preload" as="image" href={image} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
 
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
@@ -41,12 +44,10 @@ const { image, summary, url } = basics
 <style is:global>
   html {
     font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      "Courier New",
-      Courier,
-      monospace;
+      "Plus Jakarta Sans",
+      system-ui,
+      -apple-system,
+      sans-serif;
     background: #fff;
     letter-spacing: -0.025rem;
   }
@@ -105,6 +106,14 @@ const { image, summary, url } = basics
   }
 
   @media print {
+    @page {
+      margin: 0;
+    }
+
+    body {
+      padding: 0.5cm;
+    }
+
     .no-print {
       display: none !important;
     }

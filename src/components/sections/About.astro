@@ -5,8 +5,10 @@ import { basics } from "@cv"
 const { summary } = basics
 ---
 
+{summary && (
 <Section title="Sobre mí">
   <p>
     {summary}
   </p>
 </Section>
+)}

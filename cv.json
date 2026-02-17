@@ -1,275 +1,109 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
-    "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "name": "Snaider Armando Rangel Rondon",
+    "label": "Full Stack Developer | Sistemas Inteligentes & Automatización con IA | Soluciones Cloud Escalables",
+    "image": "/me.jpg",
+    "email": "armando311335@gmail.com",
+    "phone": "+57 311 304 2267",
+    "url": "",
+    "summary": "Full Stack Developer especializado en la construcción de sistemas inteligentes y escalables que transforman operaciones empresariales. Diseño soluciones end-to-end que convierten procesos manuales en flujos automatizados impulsados por inteligencia artificial, integrando arquitecturas modernas y entornos de computación en la nube. Mi enfoque se centra en eficiencia operativa, optimización de bases de datos e integración de servicios inteligentes para generar impacto medible en productividad y desempeño organizacional.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "España"
+      "postalCode": "",
+      "city": "Medellín",
+      "countryCode": "CO",
+      "region": "Colombia"
     },
-    "profiles": [
-      {
-        "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
-      },
-      {
-        "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
-      }
-    ]
+    "profiles": []
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "Lynxus Solutions",
+      "position": "Software Developer",
+      "url": "",
+      "startDate": "2024-03-01",
       "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "summary": "Orquesté el desarrollo e implementación de soluciones tecnológicas orientadas a la optimización de procesos críticos del negocio. Participé en la automatización de flujos documentales mediante sistemas de extracción y clasificación inteligente, reduciendo intervención manual y mejorando precisión operativa. Desarrollé módulos de gestión de ausentismos y funcionalidades clave en el sistema QMS, fortaleciendo trazabilidad, eficiencia y estándares de calidad.",
       "highlights": [
-        "Started the company"
+        "Implementación de procesamiento inteligente de documentos",
+        "Integración de automatización impulsada por IA",
+        "Optimización de bases de datos para rendimiento y escalabilidad",
+        "Mejoras estructurales en sistema QMS"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "name": "Freelance",
+      "position": "Desarrollador Web Frontend",
+      "url": "",
+      "startDate": "2022-02-01",
+      "endDate": "2023-04-01",
+      "summary": "Especializado en desarrollo frontend enfocado en experiencia de usuario y diseño funcional. Trabajé directamente con clientes para construir interfaces intuitivas y visualmente atractivas alineadas con objetivos comerciales. Fortalecí mi base en principios de UI/UX, optimización de rendimiento y diseño centrado en el usuario.",
       "highlights": [
-        "Started the company"
-      ]
-    },
-    {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
-      "highlights": [
-        "Started the company"
+        "Desarrollo de interfaces responsivas y orientadas al usuario",
+        "Traducción de necesidades de negocio en experiencias digitales",
+        "Mejoras en usabilidad y rendimiento web"
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "education": [
+    {
+      "institution": "SENA",
+      "area": "Análisis y Desarrollo de Software",
+      "studyType": "Tecnólogo",
+      "startDate": "2023-01-01",
+      "endDate": "2025-01-01"
+    },
+    {
+      "institution": "SENA",
+      "area": "Desarrollo de Software",
+      "studyType": "Técnico",
+      "startDate": "2020-01-01",
+      "endDate": "2022-01-01"
+    }
+  ],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend"
-      ]
+      "name": "JavaScript y TypeScript",
+      "level": "Avanzado"
     },
     {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
-      ]
+      "name": "Next.js y React",
+      "level": "Avanzado"
     },
     {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-      ]
+      "name": "Python",
+      "level": "Avanzado"
     },
     {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
+      "name": "FastAPI y Django",
+      "level": "Intermedio"
     },
     {
-      "name": "TypeScript",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
-      ]
+      "name": "SQL y Optimización de Bases de Datos",
+      "level": "Avanzado"
     },
     {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-      ]
+      "name": "Azure",
+      "level": "Intermedio"
     },
     {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
-      ]
+      "name": "Automatización con IA y Sistemas Inteligentes",
+      "level": "Avanzado"
     },
     {
       "name": "Git",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
-      ]
+      "level": "Avanzado"
     }
   ],
+  "projects": [],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Nativo"
     },
     {
-      "language": "English",
-      "fluency": "Advanced"
-    }
-  ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
-  "projects": [
-    {
-      "name": "mars.codes",
-      "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
-      "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
-      ],
-      "url": "https://mars.codes"
-    },
-    {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
-      "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
-      ],
-      "url": "https://adventjs.dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
-      ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
+      "language": "Inglés",
+      "fluency": "B1"
     }
   ]
 }
