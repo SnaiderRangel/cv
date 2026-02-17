@@ -4,7 +4,7 @@ import 'hotkeypad/index.css'
 import { type SocialIcon } from "@/types"
 import { basics } from "@cv"
 
-const { profiles } = basics
+const profiles = basics.profiles as Array<{ network: string; url: string }>
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub: `<svg
