@@ -46,17 +46,24 @@
   "education": [
     {
       "institution": "SENA",
-      "area": "Software Analysis and Development",
-      "studyType": "Technologist",
+      "area": "Software Analysis and Development (ADSO)",
+      "studyType": "Technologist Degree",
       "startDate": "2023-01-01",
-      "endDate": "2025-01-01"
+      "endDate": "2025-01-01",
+      "summary": "Comprehensive training in the software development lifecycle, covering everything from requirements gathering and architecture design to full-stack implementation and the deployment of scalable solutions.",
+      "highlights": [
+        "Specialization in modern architectures and agile methodologies (SCRUM).",
+        "Design and optimization of complex databases.",
+        "Development of intelligent systems and process automation."
+      ]
     },
     {
       "institution": "SENA",
-      "area": "Software Development",
+      "area": "Software Programming",
       "studyType": "Technical Degree",
       "startDate": "2020-01-01",
-      "endDate": "2022-01-01"
+      "endDate": "2022-01-01",
+      "summary": "Focus on programming logic fundamentals, desktop application development, and basic database management."
     }
   ],
   "skills": [

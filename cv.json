@@ -48,17 +48,24 @@
   "education": [
     {
       "institution": "SENA",
-      "area": "Análisis y Desarrollo de Software",
+      "area": "Análisis y Desarrollo de Software (ADSO)",
       "studyType": "Tecnólogo",
       "startDate": "2023-01-01",
-      "endDate": "2025-01-01"
+      "endDate": "2025-01-01",
+      "summary": "Formación integral en el ciclo de vida del desarrollo de software, abarcando desde el levantamiento de requisitos y diseño de arquitectura hasta la implementación full-stack y el despliegue de soluciones escalables.",
+      "highlights": [
+        "Especialización en arquitecturas modernas y metodologías ágiles (SCRUM).",
+        "Diseño y optimización de bases de datos complejas.",
+        "Desarrollo de sistemas inteligentes y automatización de procesos."
+      ]
     },
     {
       "institution": "SENA",
-      "area": "Desarrollo de Software",
+      "area": "Programación de Software",
       "studyType": "Técnico",
       "startDate": "2020-01-01",
-      "endDate": "2022-01-01"
+      "endDate": "2022-01-01",
+      "summary": "Enfoque en los fundamentos de la lógica de programación, desarrollo de aplicaciones de escritorio y gestión básica de bases de datos."
     }
   ],
   "skills": [
