@@ -70,11 +70,23 @@
   ],
   "skills": [
     {
-      "name": "JavaScript y TypeScript",
+      "name": "JavaScript",
       "level": "Avanzado"
     },
     {
-      "name": "Next.js y React",
+      "name": "TypeScript",
+      "level": "Avanzado"
+    },
+    {
+      "name": "React",
+      "level": "Avanzado"
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado"
+    },
+    {
+      "name": "Node.js",
       "level": "Avanzado"
     },
     {
@@ -82,11 +94,19 @@
       "level": "Avanzado"
     },
     {
-      "name": "FastAPI y Django",
+      "name": "FastAPI",
       "level": "Intermedio"
     },
     {
-      "name": "SQL y Optimización de Bases de Datos",
+      "name": "Django",
+      "level": "Intermedio"
+    },
+    {
+      "name": "SQL",
+      "level": "Avanzado"
+    },
+    {
+      "name": "Tailwind CSS",
       "level": "Avanzado"
     },
     {
@@ -94,7 +114,7 @@
       "level": "Intermedio"
     },
     {
-      "name": "Automatización con IA y Sistemas Inteligentes",
+      "name": "Automatización con IA",
       "level": "Avanzado"
     },
     {

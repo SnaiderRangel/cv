@@ -68,11 +68,23 @@
   ],
   "skills": [
     {
-      "name": "JavaScript & TypeScript",
+      "name": "JavaScript",
       "level": "Advanced"
     },
     {
-      "name": "Next.js & React",
+      "name": "TypeScript",
+      "level": "Advanced"
+    },
+    {
+      "name": "React",
+      "level": "Advanced"
+    },
+    {
+      "name": "Next.js",
+      "level": "Advanced"
+    },
+    {
+      "name": "Node.js",
       "level": "Advanced"
     },
     {
@@ -80,23 +92,31 @@
       "level": "Advanced"
     },
     {
-      "name": "FastAPI & Django",
+      "name": "FastAPI",
       "level": "Intermediate"
     },
     {
-      "name": "SQL & Database Optimization",
-      "level": "Advanced"
-    },
-    {
-      "name": "Cloud Computing",
+      "name": "Django",
       "level": "Intermediate"
     },
     {
-      "name": "AI Automation & Intelligent Systems",
+      "name": "SQL",
       "level": "Advanced"
     },
     {
-      "name": "Git & Azure DevOps",
+      "name": "Tailwind CSS",
+      "level": "Advanced"
+    },
+    {
+      "name": "Azure",
+      "level": "Intermediate"
+    },
+    {
+      "name": "AI Automation",
+      "level": "Advanced"
+    },
+    {
+      "name": "Git",
       "level": "Advanced"
     }
   ],

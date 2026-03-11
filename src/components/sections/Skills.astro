@@ -7,21 +7,32 @@ import Next from "@/icons/next.astro"
 import Python from "@/icons/python.astro"
 import FastAPI from "@/icons/fastapi.astro"
 import Django from "@/icons/django.astro"
-import Database from "@/icons/database.astro"
+import SQL from "@/icons/sql.astro"
 import AI from "@/icons/ai.astro"
 import Git from "@/icons/git.astro"
 import Azure from "@/icons/azure.astro"
+import Cloud from "@/icons/cloud.astro"
+import Tailwind from "@/icons/tailwind.astro"
+import Node from "@/icons/node.astro"
+
 import { skills } from "@cv"
 
-const SKILLS_ICONS: Record<string, any[]> = {
-  "JavaScript y TypeScript": [JavaScript, TypeScript],
-  "Next.js y React": [Next, React],
-  "Python": [Python],
-  "FastAPI y Django": [FastAPI, Django],
-  "SQL y Optimización de Bases de Datos": [Database],
-  "Azure": [Azure],
-  "Automatización con IA y Sistemas Inteligentes": [AI],
-  "Git": [Git],
+const SKILLS_ICONS: Record<string, any> = {
+  JavaScript,
+  TypeScript,
+  React,
+  "Next.js": Next,
+  Python,
+  FastAPI,
+  Django,
+  SQL,
+  Azure,
+  "Cloud Computing": Cloud,
+  "AI Automation": AI,
+  "Automatización con IA": AI,
+  Git,
+  "Tailwind CSS": Tailwind,
+  "Node.js": Node,
 }
 ---
 
@@ -29,13 +40,22 @@ const SKILLS_ICONS: Record<string, any[]> = {
 <Section title="Habilidades">
   <ul>
     {
-      skills.map(({ name }) => {
-        const icons = SKILLS_ICONS[name] || []
+      skills.map(({ name, level }) => {
+        const Icon = SKILLS_ICONS[name]
 
         return (
           <li>
-            {icons.map((Icon) => <Icon />)}
-            <span>{name}</span>
+            <div class="skill-content">
+              {Icon && (
+                <div class="icon-wrapper">
+                  <Icon />
+                </div>
+              )}
+              <div class="text-container">
+                <span>{name}</span>
+                {level && <small>{level}</small>}
+              </div>
+            </div>
           </li>
         )
       })
@@ -46,20 +66,90 @@ const SKILLS_ICONS: Record<string, any[]> = {
 
 <style>
   ul {
-    display: inline-flex;
-    gap: 8px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    width: 100%;
   }
 
   li {
-    align-items: center;
-    background: #eee;
-    border-radius: 6px;
-    color: black;
+    background: #fdfdfd;
+    border: 1px solid #f2f2f2;
+    border-radius: 12px;
+    color: #444;
     display: flex;
-    font-size: 0.8rem;
+    padding: 10px 14px;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+  }
+
+  li:hover {
+    background: #f8f8f8;
+    border-color: #e5e5e5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .skill-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .icons-container {
+    display: flex;
+    align-items: center;
+    gap: -4px; /* Stack icons slightly */
+  }
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  }
+
+  .icon-wrapper :global(svg) {
+    width: 18px;
+    height: 18px;
+    color: #333;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  span {
+    font-size: 0.85rem;
     font-weight: 500;
-    gap: 4px;
-    padding: 0.2rem 0.6rem;
+    line-height: 1.2;
+    color: #111;
+  }
+
+  small {
+    font-size: 0.7rem;
+    color: #888;
+    font-weight: 400;
+  }
+
+  @media (width <= 700px) {
+    ul {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
+    li {
+      padding: 8px 10px;
+    }
+
+    .icon-wrapper {
+        padding: 4px;
+    }
   }
 </style>
