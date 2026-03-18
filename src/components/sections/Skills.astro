@@ -15,7 +15,13 @@ import Cloud from "@/icons/cloud.astro"
 import Tailwind from "@/icons/tailwind.astro"
 import Node from "@/icons/node.astro"
 
+import Database from "@/icons/database.astro"
+import GitHub from "@/icons/GitHub.astro"
+
 import { skills } from "@cv"
+
+const coreSkills = skills.filter(skill => skill.category === "Core" || !skill.category);
+const basicSkills = skills.filter(skill => skill.category === "Basic");
 
 const SKILLS_ICONS: Record<string, any> = {
   JavaScript,
@@ -27,48 +33,100 @@ const SKILLS_ICONS: Record<string, any> = {
   Django,
   SQL,
   Azure,
+  "Microsoft Azure": Azure,
   "Cloud Computing": Cloud,
+  "Cloud Models (LLMs)": Cloud,
+  "Modelos Cloud (LLMs)": Cloud,
   "AI Automation": AI,
   "Automatización con IA": AI,
   Git,
+  GitHub,
   "Tailwind CSS": Tailwind,
   "Node.js": Node,
+  MongoDB: Database,
+  Docker: Cloud,
+  n8n: AI,
+  "C# (.NET)": Database,
+  Java: Database
 }
 ---
 
 {skills && skills.length > 0 && (
-<Section title="Habilidades">
-  <ul>
-    {
-      skills.map(({ name, level }) => {
-        const Icon = SKILLS_ICONS[name]
+<Section title="Habilidades" id="skills">
+  {coreSkills.length > 0 && (
+    <div class="skills-group">
+      <h4>Stack Principal</h4>
+      <ul>
+        {
+          coreSkills.map(({ name }) => {
+            const Icon = SKILLS_ICONS[name]
 
-        return (
-          <li>
-            <div class="skill-content">
-              {Icon && (
-                <div class="icon-wrapper">
-                  <Icon />
+            return (
+              <li>
+                <div class="skill-content">
+                  {Icon && (
+                    <div class="icon-wrapper">
+                      <Icon />
+                    </div>
+                  )}
+                  <div class="text-container">
+                    <span>{name}</span>
+                  </div>
                 </div>
-              )}
-              <div class="text-container">
-                <span>{name}</span>
-                {level && <small>{level}</small>}
-              </div>
-            </div>
-          </li>
-        )
-      })
-    }
-  </ul>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </div>
+  )}
+
+  {basicSkills.length > 0 && (
+    <div class="skills-group">
+      <h4>Otras Tecnologías</h4>
+      <ul>
+        {
+          basicSkills.map(({ name }) => {
+            const Icon = SKILLS_ICONS[name]
+
+            return (
+              <li>
+                <div class="skill-content">
+                  {Icon && (
+                    <div class="icon-wrapper">
+                      <Icon />
+                    </div>
+                  )}
+                  <div class="text-container">
+                    <span>{name}</span>
+                  </div>
+                </div>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </div>
+  )}
 </Section>
 )}
 
 <style>
+  .skills-group {
+    margin-bottom: 24px;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
   ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     width: 100%;
   }
 
@@ -78,7 +136,7 @@ const SKILLS_ICONS: Record<string, any> = {
     border-radius: 12px;
     color: #444;
     display: flex;
-    padding: 10px 14px;
+    padding: 6px 12px;
     transition: all 0.2s ease-in-out;
     cursor: default;
   }
@@ -127,7 +185,7 @@ const SKILLS_ICONS: Record<string, any> = {
   }
 
   span {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.2;
     color: #111;
@@ -141,11 +199,11 @@ const SKILLS_ICONS: Record<string, any> = {
 
   @media (width <= 700px) {
     ul {
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 6px;
     }
     
     li {
-      padding: 8px 10px;
+      padding: 6px 10px;
     }
 
     .icon-wrapper {

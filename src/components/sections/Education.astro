@@ -5,14 +5,14 @@ import { education } from "@cv"
 ---
 
 {education && education.length > 0 && (
-<Section title="Educación">
+<Section title="Educación" id="education">
   <ul>
     {
       education.map(({ institution, startDate, endDate, area, summary, highlights }) => {
         const startYear = new Date(startDate).getFullYear()
         const endYear =
           endDate != null ? new Date(endDate).getFullYear() : "Actual"
-        const years = `${startYear} - ${endYear}`
+        const years = startYear === endYear ? `${startYear}` : `${startYear} - ${endYear}`
 
         return (
           <li>

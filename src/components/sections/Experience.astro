@@ -9,7 +9,7 @@ import { work } from "@cv"
   <ul>
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
+        ({ name, startDate, endDate, position, summary, highlights, url, skills }) => {
           const startYear = new Date(startDate).getFullYear()
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Actual"
@@ -44,6 +44,13 @@ import { work } from "@cv"
 
                 <footer>
                   <p>{summary}</p>
+                  {skills && skills.length > 0 && (
+                    <div class="skills">
+                      {skills.map(skill => (
+                        <span class="skill">{skill}</span>
+                      ))}
+                    </div>
+                  )}
                 </footer>
               </article>
             </li>
@@ -127,5 +134,29 @@ import { work } from "@cv"
     time {
       text-align: right;
     }
+  }
+
+  .skills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .skill {
+    background: #f4f4f5;
+    color: #444;       
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #e4e4e7;
+    transition: all 0.2s ease;
+    cursor: default;
+  }
+
+  .skill:hover {
+    background: #e4e4e7;
+    color: #111;
   }
 </style>

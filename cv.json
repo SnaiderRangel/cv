@@ -29,6 +29,19 @@
         "Integración de automatización impulsada por IA",
         "Optimización de bases de datos para rendimiento y escalabilidad",
         "Mejoras estructurales en sistema QMS"
+      ],
+      "skills": [
+        "Python",
+        "FastAPI",
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "SQL Server",
+        "PostgreSQL",
+        "Git",
+        "GitHub",
+        "Microsoft Azure"
       ]
     },
     {
@@ -42,10 +55,48 @@
         "Desarrollo de interfaces responsivas y orientadas al usuario",
         "Traducción de necesidades de negocio en experiencias digitales",
         "Mejoras en usabilidad y rendimiento web"
+      ],
+      "skills": [
+        "React.js",
+        "Angular",
+        "Git",
+        "GitHub"
       ]
     }
   ],
   "education": [
+    {
+      "institution": "LinkedIn Learning & Docker",
+      "area": "Docker Foundations Professional Certificate",
+      "studyType": "Certificado",
+      "startDate": "2026-03-17",
+      "endDate": "2026-03-17",
+      "summary": "Certificación en fundamentos de Docker, incluyendo la creación, gestión y despliegue de contenedores aislados y ligeros.",
+      "highlights": [
+        "Containerization",
+        "Docker Products"
+      ]
+    },
+    {
+      "institution": "LinkedIn Learning",
+      "area": "Continuous Integration and Continuous Delivery with GitLab",
+      "studyType": "Certificado",
+      "startDate": "2026-03-04",
+      "endDate": "2026-03-04",
+      "summary": "Curso sobre integración continua y entrega continua (CI/CD) utilizando GitLab para automatizar la construcción, prueba y despliegue de código.",
+      "highlights": [
+        "Continuous Integration and Continuous Delivery (CI/CD)",
+        "GitLab"
+      ]
+    },
+    {
+      "institution": "Cognitive Class (IBM)",
+      "area": "Python 101 for Data Science",
+      "studyType": "Certificado",
+      "startDate": "2023-06-19",
+      "endDate": "2023-06-19",
+      "summary": "Fundamentos de Python aplicados a la ciencia de datos, incluyendo estructuras de datos, lógica de programación y manejo de librerías básicas."
+    },
     {
       "institution": "SENA",
       "area": "Análisis y Desarrollo de Software (ADSO)",
@@ -56,7 +107,8 @@
       "highlights": [
         "Especialización en arquitecturas modernas y metodologías ágiles (SCRUM).",
         "Diseño y optimización de bases de datos complejas.",
-        "Desarrollo de sistemas inteligentes y automatización de procesos."
+        "Desarrollo de sistemas inteligentes y automatización de procesos.",
+        "Asentamiento de bases en múltiples lenguajes y frameworks: C# (.NET), Python (Django), JavaScript (Next.js), Java, SQL y MongoDB."
       ]
     },
     {
@@ -71,55 +123,83 @@
   "skills": [
     {
       "name": "JavaScript",
-      "level": "Avanzado"
+      "category": "Core"
     },
     {
       "name": "TypeScript",
-      "level": "Avanzado"
-    },
-    {
-      "name": "React",
-      "level": "Avanzado"
-    },
-    {
-      "name": "Next.js",
-      "level": "Avanzado"
-    },
-    {
-      "name": "Node.js",
-      "level": "Avanzado"
+      "category": "Core"
     },
     {
       "name": "Python",
-      "level": "Avanzado"
+      "category": "Core"
+    },
+    {
+      "name": "C# (.NET)",
+      "category": "Basic"
+    },
+    {
+      "name": "Java",
+      "category": "Basic"
+    },
+    {
+      "name": "React",
+      "category": "Core"
+    },
+    {
+      "name": "Next.js",
+      "category": "Core"
+    },
+    {
+      "name": "Node.js",
+      "category": "Core"
     },
     {
       "name": "FastAPI",
-      "level": "Intermedio"
+      "category": "Core"
     },
     {
       "name": "Django",
-      "level": "Intermedio"
+      "category": "Basic"
     },
     {
       "name": "SQL",
-      "level": "Avanzado"
+      "category": "Core"
     },
     {
-      "name": "Tailwind CSS",
-      "level": "Avanzado"
+      "name": "MongoDB",
+      "category": "Basic"
     },
     {
-      "name": "Azure",
-      "level": "Intermedio"
+      "name": "Microsoft Azure",
+      "category": "Core"
     },
     {
-      "name": "Automatización con IA",
-      "level": "Avanzado"
+      "name": "Docker",
+      "category": "Core"
     },
     {
       "name": "Git",
-      "level": "Avanzado"
+      "category": "Core"
+    },
+    {
+      "name": "GitHub",
+      "category": "Core"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Core"
+    },
+    {
+      "name": "n8n",
+      "category": "Core"
+    },
+    {
+      "name": "Modelos Cloud (LLMs)",
+      "category": "Core"
+    },
+    {
+      "name": "Automatización con IA",
+      "category": "Core"
     }
   ],
   "projects": [],
