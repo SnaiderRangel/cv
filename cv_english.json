@@ -36,11 +36,21 @@
         "TypeScript",
         "React.js",
         "Next.js",
+        "Node.js",
         "SQL Server",
         "PostgreSQL",
         "Git",
         "GitHub",
-        "Microsoft Azure"
+        "GitLab",
+        "CI/CD",
+        "Microsoft Azure",
+        "Cloud Technologies",
+        "Docker",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "LLMs",
+        "Astro"
       ]
     },
     {
@@ -58,7 +68,13 @@
         "React.js",
         "Angular",
         "Git",
-        "GitHub"
+        "GitHub",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Tailwind CSS",
+        "PHP"
       ]
     }
   ],
@@ -197,6 +213,26 @@
     },
     {
       "name": "AI Automation",
+      "category": "Core"
+    },
+    {
+      "name": "CI/CD",
+      "category": "Core"
+    },
+    {
+      "name": "GitLab",
+      "category": "Core"
+    },
+    {
+      "name": "HTML",
+      "category": "Core"
+    },
+    {
+      "name": "CSS",
+      "category": "Core"
+    },
+    {
+      "name": "Astro",
       "category": "Core"
     }
   ],
